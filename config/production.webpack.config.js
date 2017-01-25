@@ -1,14 +1,13 @@
-var path = require('path'),
+var
   webpack = require('webpack'),
   extractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-  entry: path.resolve(__dirname, '../src/index.js'),
+  entry: './src/index.js',
 
   output: {
     path: './dist',
-    filename: '[name].[hash].js',
-    chunkFilename: '[id].[chunkhash].js'
+    filename: '[name].[hash].js'
   },
 
   module: {
